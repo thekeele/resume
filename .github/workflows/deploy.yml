@@ -1,26 +1,26 @@
-name: resume CI
+# name: resume CI
 
-on:
-  push:
-    branches: [ master ]
+# on:
+#   push:
+#     branches: [ master ]
 
-jobs:
-  deploy:
-    if: github.ref == 'refs/heads/master'
+# jobs:
+#   deploy:
+#     if: github.ref == 'refs/heads/master'
 
-    name: Deploy Release
-    runs-on: ubuntu-latest
+#     name: Deploy Release
+#     runs-on: ubuntu-latest
 
-    steps:
-    - name: Deploy Release to keele.codes
-      uses: appleboy/ssh-action@master
-      with:
-        script_stop: true
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.KEY }}
-        port: ${{ secrets.PORT }}
-        passphrase: ${{ secrets.PASSPHRASE }}
-        script: |
-          cd resume/
-          git pull origin master
+#     steps:
+#     - name: Deploy Release to keele.codes
+#       uses: appleboy/ssh-action@master
+#       with:
+#         script_stop: true
+#         host: ${{ secrets.HOST }}
+#         username: ${{ secrets.USERNAME }}
+#         key: ${{ secrets.KEY }}
+#         port: ${{ secrets.PORT }}
+#         passphrase: ${{ secrets.PASSPHRASE }}
+#         script: |
+#           cd resume/
+#           git pull origin master
