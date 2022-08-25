@@ -19,5 +19,5 @@ jobs:
         key: ${{ secrets.KEY }}
         passphrase: ${{ secrets.PASS }}
         script: |
-          whoami
-          ls -al
+          cd resume/
+          git pull origin master
