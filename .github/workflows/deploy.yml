@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Pull Resume for keele.codes
-      uses: fifsky/ssh-action@v0.0.6
+      uses: appleboy/ssh-action@v0.1.5
       with:
+        debug: true
         host: ${{ secrets.HOST }}
         port: ${{ secrets.PORT }}
-        user: ${{ secrets.USER }}
+        username: ${{ secrets.USER }}
         key: ${{ secrets.KEY }}
-        pass: ${{ secrets.PASS }}
-        command: |
-          cd resume/
-          ls -a
-          echo "updating resume"
+        passphrase: ${{ secrets.PASS }}
+        script: |
+          whoami
+          ls -al
