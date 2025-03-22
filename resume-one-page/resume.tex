@@ -14,10 +14,10 @@
 
 \fancyhf{}
 \headwidth 7.5in
-\setlength{\headheight}{22.67781pt}
+\setlength{\headheight}{21.62779pt}
 \lhead{
   {\huge \textbf{Mark Keele}} -- \
-  {\large {v3.0.0}}
+  {\large {v3.1.0}}
 }
 \rhead{
   \href{mailto:mark@keele.codes}{mark@keele.codes} -- \
@@ -30,15 +30,17 @@
 \date{\today}
 \begin{document}
 
+Software Engineer with a Master’s in Computer Science and over 10 years of experience, including 7 years mastering Elixir, thriving in fast-paced startup environments like onXmaps, ScriptDrop, BlockFi, and GridPoint. I specialize in web development, APIs, networks, and security, delivering performant, secure, and robust software while excelling in remote work settings.
+
+\noindent\rule{7.5in}{0.4pt}
+
 \noindent\textbf{Senior Software Engineer - Elixir}
 \hfill{10/2022 -- 02/2025 (28 months)} \\
 \href{https://www.gridpoint.com/}{GridPoint} -- Remote
 
 \begin{itemize}
 
-  \item Built the data ingestion and visualization layer for the Savings product that illustrated the value GridPoint brought to its customers.
-
-  \item Integrated with a third party Demand Response partner and built a curtailment event notification handler that we used to reduce energy consumption for the sites's that GridPoint manages.
+  \item Developed a utility billing API integration to ingest customer data and generate savings metrics, which I visualized using an interactive Phoenix LiveView SVG bar chart. Built a demand response system with a third-party integration, handling curtailment events via API to dynamically adjust a site's energy usage based on real-time grid demands.
 
 \end{itemize}
 
@@ -48,9 +50,7 @@
 
 \begin{itemize}
 
-  \item Worked on the Crypto Payments team where we were responsible for all customer crypto transactions. Primary focus was decoupling multiple API services from the main monolith service. Integrated OpenTelemetry stack to observe system perform with dashboards and alerts.
-
-  \item Saved significant costs to the firm by implementing a withdrawal fee ceiling. This feature delayed transaction processing until withdrawal fees came down. The fee ceiling was adjustable in real-time to account for dynamic market conditions. Reduced fees from 31\% over network average to 11\% below network average.
+  \item Integrated OpenTelemetry for precise metrics and logging to ensure flawless execution of immutable blockchain transactions. Designed a dynamic withdrawal fee ceiling that delayed transactions until fees dropped, slashing fees from 31\% above the network average to 11\% below, saving significant costs while managing hundreds of millions daily transaction volume.
 
 \end{itemize}
 
@@ -60,7 +60,7 @@
 
 \begin{itemize}
 
-  \item Developed a new order fulfillment architecture for our on-demand delivery partners. Supplemented a GenStateMachine based system with an Oban based system. The new architecture was easier to reason about and fulfilled the requirements of the existing system. Deployed system with the launch of Uber as a delivery partner.
+  \item Redesigned the order fulfillment architecture for on-demand delivery partners, starting with an Uber Eats API integration using the adapter pattern for testing without physical deliveries. I replaced a stateful GenStateMachine system with an Oban-based solution that stored delivery states in Postgresql, ensuring no data loss during crashes or deploys.
 
 \end{itemize}
 
@@ -70,9 +70,7 @@
 
 \begin{itemize}
 
-  \item Lead backend design and development on a feature team for social login using OAuth 2.0. Social login resulted in more account creations by reducing friction.
-
-  \item Leveraged Google Cloud PubSub to create a soft real-time system for our users with Play store subscriptions. Resulted in our system being in sync with the payment provider and seamless product access for our users.
+  \item Developed a custom feature gating system for targeted feature testing, led backend development for a successful Facebook OAuth 2.0 social login that boosted account creation, and built a real-time subscription push system with Google PubSub and Elixir GenServer to ensure seamless product access.
 
 \end{itemize}
 
@@ -80,9 +78,21 @@
 \hfill{08/2013 -- 05/2015 (21 months)} \\
 \href{https://pti.iu.edu/centers/crest.html}{Center for Research in Extreme Scale Technologies}, Indiana University -- Bloomington, Indiana
 
+\begin{itemize}
+
+  \item Developed a Node.js and AngularJS single-page application to perform network tests and visualize performance for high-throughput Internet2 research networks.
+
+\end{itemize}
+
 \noindent\textbf{Software Developer - Ruby on Rails}
 \hfill{06/2012 -- 07/2013 (13 months)} \\
 \href{https://www.olcf.ornl.gov/}{Leadership Computing Facility}, Oak Ridge National Laboratory -- Oak Ridge, Tennessee
+
+\begin{itemize}
+
+  \item Built a Ruby on Rails resource allocation tracking system for the world’s fastest supercomputer, transforming a MySQL database into an accessible MVC user interface.
+
+\end{itemize}
 
 \noindent\rule{7.5in}{0.4pt}
 
